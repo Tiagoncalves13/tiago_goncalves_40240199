@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5d7; /* Tom de castanho claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f4ef; /* Tom mais claro */
+            border: 1px solid #d3bca2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #8b5e3c; /* Castanho mais forte */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            color: #7a5230; /* Tom intermediário */
+        }
+
+        input, textarea, select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #d3bca2;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #8b5e3c;
+            box-shadow: 0 0 5px #d3bca2;
+        }
+
+        button {
+            background-color: #8b5e3c; /* Botão castanho */
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #a66f49; /* Mais claro ao passar o mouse */
+        }
+
+        .small-text {
+            font-size: 0.9rem;
+            color: #7a5230;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Faça a Sua Reserva</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione o horário</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+            </select>
+
+            <label for="mensagem">Mensagem (opcional):</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação especial?"></textarea>
+
+            <button href="index.html">Reservar</button>
+        </form>
+        <p class="small-text">Garantimos o melhor atendimento para sua experiência!</p>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="window.location.href='index.html'" style="padding: 10px 20px; background-color: #8b5e3c; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;">
+            Voltar à Página Principal
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #b2744c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.dish-container {
+    display: flex;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* Imagem do prato */
+.dish-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-right: 4px solid #b2744c;
+    object-fit: cover;
+}
+
+.dish-details {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Estilização dos textos */
+.dish-details h2 {
+    color: #b2744c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.dish-details p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.dish-details ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.dish-details ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Estilo do botão "Voltar ao Menu" */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b2744c;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b2744c;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #b2744c;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
